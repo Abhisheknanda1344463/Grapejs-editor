@@ -5,6 +5,7 @@
     <title>GrapesJS</title>
     <link rel="stylesheet" href="dist/css/grapes.min.css">
     <script src="dist/grapes.min.js"></script>
+      <script src="dist/grapesjs-blocks-basic.min.js"></script>
     <style>
       body,
       html {
@@ -83,6 +84,10 @@
         showOffsets: 1,
         noticeOnUnload: 0,
         container: '#gjs',
+        plugins: ['gjs-blocks-basic'],
+      //   pluginsOpts: {
+      //   'gjs-blocks-basic': {/* ...options */}
+      // },
         height: '100%',
         fromElement: true,
         storageManager: { autoload: 0 },
@@ -107,16 +112,28 @@
               name: 'Extra',
               open: false,
               buildProps: ['transition', 'perspective', 'transform'],
+            },{
+              name: 'Goluuuuuuuuuuu',
+              open: false,
+              buildProps: ['float','display','ransition', 'perspective', 'transform'],
             }
           ],
         },
       });
 
-      editor.BlockManager.add('testBlock', {
-        label: 'Block',
-        attributes: { class:'gjs-fonts gjs-f-b1' },
-        content: `<div style="padding-top:50px; padding-bottom:50px; text-align:center">Test block</div>`
-      })
+      // editor.BlockManager.add('testBlock', {
+      //   label: 'Block',
+      //   attributes: { class:'gjs-fonts gjs-f-b1' },
+      //   content: `<div style="padding-top:50px; padding-bottom:50px; text-align:center">Test block</div>`
+      // });
+      //
+      // editor.BlockManager.add('goluBlock',{
+      //   label: 'shkdgfskd',
+      //   attributes: { class: 'gjs-fonts gjs-f-b1'},
+      //   content: '<p>dhvjdbv</p>'
+      // })
+
+
     </script>
   </body>
 </html>

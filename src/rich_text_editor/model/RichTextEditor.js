@@ -39,6 +39,18 @@ const defActions = {
     },
     result: rte =>
       rte.insertHTML(`<a class="link" href="">${rte.selection()}</a>`)
+  },
+  centre: {
+    icon: '<b>B</b>',
+    name: 'centre',
+    attributes: { title: 'centre' },
+    result: rte => rte.exec('centre')
+  },
+  subscript: {
+    icon: '<span><i class="fas fa-subscript"></i><span>',
+    name: 'subscript',
+    attributes: { title: 'subscript' },
+    result: rte => rte.exec('subscript')
   }
 };
 

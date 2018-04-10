@@ -134,6 +134,7 @@ module.exports = () => {
      *   // Example on it's easy to wrap a selected content
      *   result: rte => rte.insertHTML(`<a href="#">${rte.selection()}</a>`)
      * });
+
      * // An example with fontSize
      * rte.add('fontSize', {
      *   icon: `<select class="gjs-field">
